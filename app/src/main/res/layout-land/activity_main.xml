@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202732"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="301dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                app:srcCompat="@mipmap/usuario6" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="@string/txtUsuario"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/text_size_standard" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:drawableLeft="@drawable/icon_seguridad"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="@string/txtContraseña"
+                android:inputType="textPassword"
+                android:textSize="@dimen/text_size_standard" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_registro"
+                android:text="@string/buttonIngresar"
+                android:textSize="@dimen/text_size_standard" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:gravity="center"
+                android:onClick="onSlideClicked"
+                android:text="@string/textview"
+                android:textSize="@dimen/text_size_standard"
+                android:drawablePadding="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

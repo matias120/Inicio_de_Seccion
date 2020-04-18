@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202732"
+    tools:context=".NuevoUsuario">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="234dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/contenedor2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView3"
+        app:layout_constraintStart_toStartOf="@+id/scrollView3"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3">
+
+        <EditText
+            android:id="@+id/editText16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="@string/txtUsuario"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/text_size_standard" />
+
+        <EditText
+            android:id="@+id/editText17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/icon_email"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="@string/txtCorreo"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/text_size_standard" />
+
+        <EditText
+            android:id="@+id/editText18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/icon_seguridad"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="@string/txtContraseña"
+            android:inputType="textPassword"
+            android:textSize="@dimen/text_size_standard" />
+
+        <EditText
+            android:id="@+id/editText19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/icon_seguridad"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="@string/txtRepetirContrasena"
+            android:inputType="textPassword"
+            android:textSize="@dimen/text_size_standard" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_registro"
+            android:onClick="regresar"
+            android:text="@string/buttonRegistrar"
+            android:textSize="@dimen/text_size_standard"
+            android:drawablePadding="8dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IniciodeSecion</string>
+    <string name="txtUsuario">Usuario</string>
+    <string name="txtContraseña">Contraseña</string>
+    <string name="buttonIngresar">Ingresar</string>
+    <string name="buttonRegistrar">Registrarse</string>
+    <string name="textview">¿Desea crear un nuevo usuario?</string>
+    <string name="txtCorreo">Correo</string>
+    <string name="txtRepetirContrasena">Repetir Contraseña</string>
+</resources>
